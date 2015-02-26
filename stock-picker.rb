@@ -1,7 +1,9 @@
-# each value of 'values' represents the price of a stock on a given day.
-# the buy day must come before the sell day.
-# stock_picker will find the greatest difference between stock prices(max_profit),
-# but only if the 'buy_day' comes before the 'sell_day'.
+=begin 
+each value of 'values' represents the price of a stock on a given day.
+stock_picker will find the greatest difference between stock prices(max_profit),
+but will only compare against indices after what is currently 
+being checked (only if the 'buy_day' comes before the 'sell_day').
+=end
 
 def stock_picker(values)
 	buy_day = 0
